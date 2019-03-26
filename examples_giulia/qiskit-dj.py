@@ -55,8 +55,8 @@ circuitName = "DeutschJozsa"
 djCircuit = QuantumCircuit(qr, cr)
 
 # Create the superposition of all input queries in the first register by applying the Hadamard gate to each qubit.
-for i in range(n):
-    djCircuit.h(qr[i])
+
+djCircuit.h(qr)
 
 # Flip the second register and apply the Hadamard gate.
 djCircuit.x(qr[n])
@@ -79,8 +79,7 @@ else:  # Otherwise, it returns the inner product of the input with a (non-zero b
 #djCircuit.barrier()
 
 # Apply Hadamard gates after querying the oracle
-for i in range(n):
-    djCircuit.h(qr[i])
+djCircuit.h(qr)
 
 # Measurement
 #djCircuit.barrier()
@@ -95,7 +94,7 @@ djCircuit.draw(output='mpl')
 backend = BasicAer.get_backend('qasm_simulator')
 shots = nrep
 t = time.time()
-job = execute(djCircuit, backend=backend, shots=shots)
+job = execgitute(djCircuit, backend=backend, shots=shots)
 elapsed = time.time() - t
 results = job.result()
 answer = results.get_counts()

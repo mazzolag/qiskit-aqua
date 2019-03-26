@@ -15,7 +15,7 @@ echo "  LOADING MODULES"
 echo "============================="
 module load daint-mc
 module load python_virtualenv/15.0.3
-module load cray-python
+module load cray-python/3.6.5.1
 module load CMake
 
 export CRAYPE_LINK_TYPE=dynamic
