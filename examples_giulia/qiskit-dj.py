@@ -92,6 +92,8 @@ for i in range(n):
 #time management
 
 backend = BasicAer.get_backend('qasm_simulator')
+#configuration = backend.configuration()
+#configuration.n_qubits = n + 1
 shots = nrep
 t = time.time()
 job = execute(djCircuit, backend=backend, shots=shots)

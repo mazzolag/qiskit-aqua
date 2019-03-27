@@ -13,10 +13,10 @@
 echo "============================="
 echo "  LOADING MODULES"
 echo "============================="
+source $SCRATCH/g_virtenv/bin/activate
 module load daint-mc
-module load python_virtualenv/15.0.3
 module load cray-python/3.6.5.1
-module load CMake
+module load PyExtensions/3.6.5.1-CrayGNU-18.08
 
 export CRAYPE_LINK_TYPE=dynamic
 
@@ -27,11 +27,12 @@ echo "================================"
 nodes=1
 ranks_per_node=1
 
-n_repetitions=3
-N=(4 7 10 13 16 19 21 24 27)
+n_repetitions=1024
+N=(4 7 10 13 16 19 22 25)
 threads_per_rank=(1 2 4 8 16 32)
 
-path_to_executable="./examples_giulia/shor"
+cd ../
+path_to_executable="./examples_giulia/qiskit-dj.py"
 
 # iterate over the values of argument N
 for arg in "${N[@]}"
@@ -43,9 +44,9 @@ do
 
         echo "CONFIGURATION: N = ${arg}, threads = ${threads}"
 
-        output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node ${path_to_executable} -N ${arg} -r ${n_repetitions})
-        echo "$output"
-        echo "--------------------------------"
+        output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node ${path_to_executable} -n ${arg} -r ${n_repetitions})
+        echo "$output" >> ./docs/dj-benchmark.txt
+        echo "--------------------------------" >> ./docs/dj-benchmark.txt
     done
     echo ""
     echo "================================"
