@@ -1,6 +1,5 @@
 # useful additional packages
 import numpy as np
-import matplotlib.pyplot as plt
 from math import pi
 import time
 import argparse
@@ -55,8 +54,8 @@ circuitName = "DeutschJozsa"
 djCircuit = QuantumCircuit(qr, cr)
 
 # Create the superposition of all input queries in the first register by applying the Hadamard gate to each qubit.
-
-djCircuit.h(qr)
+for i in range(n):
+    djCircuit.h(qr[i])
 
 # Flip the second register and apply the Hadamard gate.
 djCircuit.x(qr[n])
@@ -79,7 +78,8 @@ else:  # Otherwise, it returns the inner product of the input with a (non-zero b
 #djCircuit.barrier()
 
 # Apply Hadamard gates after querying the oracle
-djCircuit.h(qr)
+for i in range(n):
+    djCircuit.h(qr[i])
 
 # Measurement
 #djCircuit.barrier()
@@ -87,22 +87,22 @@ for i in range(n):
     djCircuit.measure(qr[i], cr[i])
 
 #draw the circuit
-djCircuit.draw(output='mpl')
+#djCircuit.draw(output='mpl')
 
 #time management
 
 backend = BasicAer.get_backend('qasm_simulator')
 shots = nrep
 t = time.time()
-job = execgitute(djCircuit, backend=backend, shots=shots)
+job = execute(djCircuit, backend=backend, shots=shots)
 elapsed = time.time() - t
 results = job.result()
 answer = results.get_counts()
 print("Answer = ", answer)
-print("elapsed time [ms] = ", elapsed*1e3/nrep)
+print("elapsed time [ms] = ", elapsed*1e3)
 
-fig = plot_histogram(answer)
+#fig = plot_histogram(answer)
 
-fig.show()
+#fig.show()
 
 
