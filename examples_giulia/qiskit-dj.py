@@ -36,7 +36,9 @@ from qiskit.tools.visualization import plot_histogram
 #n = 13
 # Choose a type of oracle at random. With probability half it is constant,
 # and with the same probability it is balanced
-oracleType, oracleValue = np.random.randint(2), np.random.randint(2)
+
+#oracleType, oracleValue = np.random.randint(2), np.random.randint(2)
+oracleType, oracleValue = 0, 1
 
 if oracleType == 0:
     print("The oracle returns a constant value ", oracleValue)
