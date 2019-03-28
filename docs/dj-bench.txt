@@ -1,0 +1,180 @@
+CONFIGURATION: N = 4, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  376.13582611083984^M
+--------------------------------
+CONFIGURATION: N = 4, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  333.3401679992676^M
+--------------------------------
+CONFIGURATION: N = 4, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  362.55693435668945^M
+--------------------------------
+CONFIGURATION: N = 4, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  313.97414207458496^M
+--------------------------------
+CONFIGURATION: N = 4, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  373.5206127166748^M
+--------------------------------
+CONFIGURATION: N = 4, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000': 1024}^M
+elapsed time [ms] =  460.0534439086914^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  388.0276679992676^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  375.6108283996582^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  328.8114070892334^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  334.8722457885742^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  338.604211807251^M
+--------------------------------
+CONFIGURATION: N = 7, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000000': 1024}^M
+elapsed time [ms] =  355.27586936950684^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  334.00750160217285^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  373.6095428466797^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  365.38100242614746^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  363.3122444152832^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  362.1995449066162^M
+--------------------------------
+CONFIGURATION: N = 10, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000000000': 1024}^M
+elapsed time [ms] =  396.42333984375^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  417.71888732910156^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  453.0510902404785^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  403.48100662231445^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  421.4191436767578^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  449.49984550476074^M
+--------------------------------
+CONFIGURATION: N = 13, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000': 1024}^M
+elapsed time [ms] =  409.9688529968262^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  427.05321311950684^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  387.3717784881592^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  429.4548034667969^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  423.1421947479248^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  459.16247367858887^M
+--------------------------------
+CONFIGURATION: N = 16, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000': 1024}^M
+elapsed time [ms] =  420.0174808502197^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 1
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  428.1165599822998^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 2
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  491.22095108032227^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 4
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  399.63412284851074^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 8
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  399.7230529785156^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 16
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  667.2098636627197^M
+--------------------------------
+CONFIGURATION: N = 19, threads = 32
+The oracle returns a constant value  1^M
+Answer =  {'0000000000000000000': 1024}^M
+elapsed time [ms] =  449.5739936828613^M
+--------------------------------
