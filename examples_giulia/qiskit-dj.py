@@ -11,6 +11,7 @@ text = 'This is the DJ (Quantum-) Algorithm.'
 parser = argparse.ArgumentParser(description=text)
 parser.add_argument("-n", "--numQubits", type=int, help="Input number of qubits / length of the boolean function")
 parser.add_argument("-r", "--repetitions", type=int, help="Number of repetitions", default=1)
+parser.add_argument("-thr", "--maxThreads", type=int, help="Maximal number of threads used", default=0)
 
 args = parser.parse_args()
 
@@ -21,6 +22,7 @@ else:
     n = int(args.numQubits)
 
 nrep = int(args.repetitions)
+maxThreads = int(args.maxThreads)
 
 
 # importing Qiskit
@@ -46,8 +48,13 @@ else:
     print("The oracle returns a balanced function")
     a = np.random.randint(1, 2 ** n)  # this is a hidden parameter for balanced oracle.
 
+# Choose backend
+backend = BasicAer.get_backend('qasm_simulator')
+
+
 # Creating registers
 # n qubits for querying the oracle and one qubit for storing the answer
+t = time.time()
 qr = QuantumRegister(n + 1)  # all qubits are initialized to zero
 # for recording the measurement on the first register
 cr = ClassicalRegister(n)
@@ -91,17 +98,11 @@ for i in range(n):
 #draw the circuit
 #djCircuit.draw(output='mpl')
 
-#time management
-
-backend = BasicAer.get_backend('qasm_simulator')
-#configuration = backend.configuration()
-#configuration.n_qubits = n + 1
 shots = nrep
-t = time.time()
-job = execute(djCircuit, backend=backend, shots=shots)
-elapsed = time.time() - t
+job = execute(djCircuit, backend=backend, shots=shots, backend_options={"max_parallel_threads": maxThreads})
 results = job.result()
 answer = results.get_counts()
+elapsed = time.time() - t
 print("Answer = ", answer)
 print("elapsed time [ms] = ", elapsed*1e3)
 

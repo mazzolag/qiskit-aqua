@@ -28,7 +28,7 @@ nodes=1
 ranks_per_node=1
 
 n_repetitions=1024
-N=(16 19 22 25)
+N=(4 7 10 13 16 19 22 25)
 threads_per_rank=(1 2 4 8 16 32)
 
 cd ../examples_giulia/
@@ -45,7 +45,7 @@ do
         echo "CONFIGURATION: N = ${arg}, threads = ${threads}"
         echo "CONFIGURATION: N = ${arg}, threads = ${threads}" >> ../docs/dj-benchmark.txt
 
-        output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node python qiskit-dj.py -n ${arg} -r ${n_repetitions})
+        output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node python qiskit-dj.py -n ${arg} -r ${n_repetitions} -thr ${threads})
         echo "$output" >> ../docs/dj-benchmark.txt
         echo "--------------------------------" >> ../docs/dj-benchmark.txt
     done
