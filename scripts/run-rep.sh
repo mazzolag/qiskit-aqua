@@ -3,11 +3,11 @@
 # this part will be ignored if:
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=2
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=30
+#SBATCH --time=400
 
 # loading necessary modules
 echo "============================="
@@ -43,11 +43,11 @@ do
         export OMP_NUM_THREADS=${threads}
 
         echo "CONFIGURATION: N = ${arg}, threads = ${threads}"
-        echo "CONFIGURATION: N = ${arg}, threads = ${threads}" >> ../docs/dj-benchmark.txt
+        echo "CONFIGURATION: N = ${arg}, threads = ${threads}" >> ../docs/dj-benchmark-rep.txt
 
         output=$(srun -u -N $nodes --ntasks-per-node=$ranks_per_node python qiskit-dj-rep.py -n ${arg} -r ${n_repetitions} -thr ${threads})
-        echo "$output" >> ../docs/dj-benchmark.txt
-        echo "--------------------------------" >> ../docs/dj-benchmark.txt
+        echo "$output" >> ../docs/dj-benchmark-rep.txt
+        echo "--------------------------------" >> ../docs/dj-benchmark-rep.txt
     done
     echo ""
     echo "================================"

@@ -1,0 +1,217 @@
+CONFIGURATION: N = 4, threads = 1
+The oracle returns a balanced function
+Answer =  {'1101': 100}
+Avg elapsed time [ms] =  146.1148977279663  Std deviation =  94.91080212355338
+Job execute: Avg elapsed time [ms] =  59.22243595123291  Std deviation =  92.96202808496328
+--------------------------------
+CONFIGURATION: N = 4, threads = 2
+The oracle returns a balanced function
+Answer =  {'1001': 100}
+Avg elapsed time [ms] =  132.2138547897339  Std deviation =  74.35409095569972
+Job execute: Avg elapsed time [ms] =  51.99568271636963  Std deviation =  72.70614101639329
+--------------------------------
+CONFIGURATION: N = 4, threads = 4
+The oracle returns a balanced function
+Answer =  {'1101': 100}
+Avg elapsed time [ms] =  141.89832210540771  Std deviation =  79.10130411347524
+Job execute: Avg elapsed time [ms] =  54.332518577575684  Std deviation =  77.61040821974778
+--------------------------------
+CONFIGURATION: N = 4, threads = 8
+The oracle returns a balanced function
+Answer =  {'0101': 100}
+Avg elapsed time [ms] =  133.75012874603271  Std deviation =  74.54526987378834
+Job execute: Avg elapsed time [ms] =  51.918578147888184  Std deviation =  73.21070921817855
+--------------------------------
+CONFIGURATION: N = 4, threads = 16
+The oracle returns a balanced function
+Answer =  {'1111': 100}
+Avg elapsed time [ms] =  138.9812469482422  Std deviation =  77.9288808892916
+Job execute: Avg elapsed time [ms] =  54.13706302642822  Std deviation =  75.93757731674465
+--------------------------------
+CONFIGURATION: N = 4, threads = 32
+The oracle returns a balanced function
+Answer =  {'1000': 100}
+Avg elapsed time [ms] =  127.05910205841064  Std deviation =  74.44313632286479
+Job execute: Avg elapsed time [ms] =  51.55918598175049  Std deviation =  72.43649026538394
+--------------------------------
+CONFIGURATION: N = 7, threads = 1
+The oracle returns a balanced function
+Answer =  {'0100111': 100}
+Avg elapsed time [ms] =  203.85642051696777  Std deviation =  74.1513461773772
+Job execute: Avg elapsed time [ms] =  61.08901500701904  Std deviation =  72.47256040953036
+--------------------------------
+CONFIGURATION: N = 7, threads = 2
+The oracle returns a balanced function
+Answer =  {'1000111': 100}
+Avg elapsed time [ms] =  201.7157793045044  Std deviation =  75.38914441674441
+Job execute: Avg elapsed time [ms] =  61.342644691467285  Std deviation =  73.43202055038681
+--------------------------------
+CONFIGURATION: N = 7, threads = 4
+The oracle returns a balanced function
+Answer =  {'0000001': 100}
+Avg elapsed time [ms] =  204.6583652496338  Std deviation =  92.47766119780431
+Job execute: Avg elapsed time [ms] =  65.74490070343018  Std deviation =  90.7956353856118
+--------------------------------
+CONFIGURATION: N = 7, threads = 8
+The oracle returns a balanced function
+Answer =  {'1101000': 100}
+Avg elapsed time [ms] =  216.9226884841919  Std deviation =  103.09085531379813
+Job execute: Avg elapsed time [ms] =  70.71609497070312  Std deviation =  101.17273859843303
+--------------------------------
+CONFIGURATION: N = 7, threads = 16
+The oracle returns a balanced function
+Answer =  {'1000100': 100}
+Avg elapsed time [ms] =  205.5044174194336  Std deviation =  85.09411707854747
+Job execute: Avg elapsed time [ms] =  63.7430191040039  Std deviation =  83.43767235806835
+--------------------------------
+CONFIGURATION: N = 7, threads = 32
+The oracle returns a balanced function
+Answer =  {'1100101': 100}
+Avg elapsed time [ms] =  221.20189666748047  Std deviation =  99.70202811964826
+Job execute: Avg elapsed time [ms] =  70.57766914367676  Std deviation =  97.8756966539595
+--------------------------------
+CONFIGURATION: N = 10, threads = 1
+The oracle returns a balanced function
+Answer =  {'1110001100': 100}
+Avg elapsed time [ms] =  460.67187786102295  Std deviation =  90.66959420217152
+Job execute: Avg elapsed time [ms] =  73.21603298187256  Std deviation =  94.39559106157229
+--------------------------------
+CONFIGURATION: N = 10, threads = 2
+The oracle returns a balanced function
+Answer =  {'0000111010': 100}
+Avg elapsed time [ms] =  473.0229377746582  Std deviation =  97.9906882672169
+Job execute: Avg elapsed time [ms] =  76.03514194488525  Std deviation =  100.05074575423585
+--------------------------------
+CONFIGURATION: N = 10, threads = 4
+The oracle returns a balanced function
+Answer =  {'1101101011': 100}
+Avg elapsed time [ms] =  519.9357748031616  Std deviation =  90.03270090204053
+Job execute: Avg elapsed time [ms] =  74.92103576660156  Std deviation =  95.85461871337895
+--------------------------------
+CONFIGURATION: N = 10, threads = 8
+The oracle returns a balanced function
+Answer =  {'0010100011': 100}
+Avg elapsed time [ms] =  412.88583278656006  Std deviation =  92.7434408177427
+Job execute: Avg elapsed time [ms] =  72.68314361572266  Std deviation =  94.89627321199188
+--------------------------------
+CONFIGURATION: N = 10, threads = 16
+The oracle returns a balanced function
+Answer =  {'0010000110': 100}
+Avg elapsed time [ms] =  443.80414485931396  Std deviation =  92.77819409440255
+Job execute: Avg elapsed time [ms] =  72.53100872039795  Std deviation =  94.3245998093288
+--------------------------------
+CONFIGURATION: N = 10, threads = 32
+The oracle returns a balanced function
+Answer =  {'0011100000': 100}
+Avg elapsed time [ms] =  431.69636726379395  Std deviation =  94.55474922978055
+Job execute: Avg elapsed time [ms] =  72.1564531326294  Std deviation =  95.19905438720943
+--------------------------------
+CONFIGURATION: N = 13, threads = 1
+The oracle returns a balanced function
+Answer =  {'0111101011101': 100}
+Avg elapsed time [ms] =  2847.281813621521  Std deviation =  85.24451583287183
+Job execute: Avg elapsed time [ms] =  79.33902740478516  Std deviation =  82.78803176108038
+--------------------------------
+CONFIGURATION: N = 13, threads = 2
+The oracle returns a balanced function
+Answer =  {'0101000001000': 100}
+Avg elapsed time [ms] =  1716.791558265686  Std deviation =  122.40481656321538
+Job execute: Avg elapsed time [ms] =  90.04859924316406  Std deviation =  125.32375422069764
+--------------------------------
+CONFIGURATION: N = 13, threads = 4
+The oracle returns a balanced function
+Answer =  {'0001100001111': 100}
+Avg elapsed time [ms] =  1409.6323251724243  Std deviation =  118.90099944257615
+Job execute: Avg elapsed time [ms] =  85.50379276275635  Std deviation =  102.59472609337784
+--------------------------------
+CONFIGURATION: N = 13, threads = 8
+The oracle returns a balanced function
+Answer =  {'1011010010100': 100}
+Avg elapsed time [ms] =  1828.5494089126587  Std deviation =  127.32697965637114
+Job execute: Avg elapsed time [ms] =  92.30778217315674  Std deviation =  126.81905855842618
+--------------------------------
+CONFIGURATION: N = 13, threads = 16
+The oracle returns a balanced function
+Answer =  {'1011010100001': 100}
+Avg elapsed time [ms] =  1800.9873867034912  Std deviation =  98.35415602677516
+Job execute: Avg elapsed time [ms] =  82.47463703155518  Std deviation =  96.24658328718105
+--------------------------------
+CONFIGURATION: N = 13, threads = 32
+The oracle returns a balanced function
+Answer =  {'1010111111111': 100}
+Avg elapsed time [ms] =  2118.897485733032  Std deviation =  88.94789728074525
+Job execute: Avg elapsed time [ms] =  83.31553936004639  Std deviation =  89.81780406431142
+--------------------------------
+CONFIGURATION: N = 16, threads = 1
+The oracle returns a balanced function
+Answer =  {'1111001011001011': 100}
+Avg elapsed time [ms] =  14090.15121459961  Std deviation =  110.17093793288387
+Job execute: Avg elapsed time [ms] =  94.64731216430664  Std deviation =  99.27639255371572
+--------------------------------
+CONFIGURATION: N = 16, threads = 2
+The oracle returns a balanced function
+Answer =  {'1000000111011101': 100}
+Avg elapsed time [ms] =  20641.768884658813  Std deviation =  121.84256588325859
+Job execute: Avg elapsed time [ms] =  97.45569229125977  Std deviation =  112.6909415781706
+--------------------------------
+CONFIGURATION: N = 16, threads = 4
+The oracle returns a balanced function
+Answer =  {'0101110010100110': 100}
+Avg elapsed time [ms] =  14672.335171699524  Std deviation =  86.47573014798509
+Job execute: Avg elapsed time [ms] =  95.0547456741333  Std deviation =  104.54025572973727
+--------------------------------
+CONFIGURATION: N = 16, threads = 8
+The oracle returns a balanced function
+Answer =  {'1010110100101101': 100}
+Avg elapsed time [ms] =  17245.240926742554  Std deviation =  119.75330498063435
+Job execute: Avg elapsed time [ms] =  101.46279335021973  Std deviation =  122.42867736756152
+--------------------------------
+CONFIGURATION: N = 16, threads = 16
+The oracle returns a balanced function
+Answer =  {'0111010011000011': 100}
+Avg elapsed time [ms] =  11176.583576202393  Std deviation =  114.28846133118034
+Job execute: Avg elapsed time [ms] =  93.64612102508545  Std deviation =  99.7704555741643
+--------------------------------
+CONFIGURATION: N = 16, threads = 32
+The oracle returns a balanced function
+Answer =  {'1010100101010000': 100}
+Avg elapsed time [ms] =  12938.072085380554  Std deviation =  242.52874531775478
+Job execute: Avg elapsed time [ms] =  93.72203350067139  Std deviation =  102.14288935464398
+--------------------------------
+CONFIGURATION: N = 19, threads = 1
+The oracle returns a balanced function
+Answer =  {'1001010110111011011': 100}
+Avg elapsed time [ms] =  162362.83781528473  Std deviation =  2979.073483448862
+Job execute: Avg elapsed time [ms] =  107.74617195129395  Std deviation =  108.04897625731508
+--------------------------------
+CONFIGURATION: N = 19, threads = 2
+The oracle returns a balanced function
+Answer =  {'0000101110011100001': 100}
+Avg elapsed time [ms] =  116876.83327198029  Std deviation =  3780.8647974971286
+Job execute: Avg elapsed time [ms] =  107.41469860076904  Std deviation =  117.18437914953569
+--------------------------------
+CONFIGURATION: N = 19, threads = 4
+The oracle returns a balanced function
+Answer =  {'0011011100000100111': 100}
+Avg elapsed time [ms] =  94709.11297798157  Std deviation =  4831.909604710325
+Job execute: Avg elapsed time [ms] =  102.12991237640381  Std deviation =  100.1427485863018
+--------------------------------
+CONFIGURATION: N = 19, threads = 8
+The oracle returns a balanced function
+Answer =  {'0100011011000001101': 100}
+Avg elapsed time [ms] =  133729.70473766327  Std deviation =  3847.0613477403276
+Job execute: Avg elapsed time [ms] =  100.7354736328125  Std deviation =  94.6695428392967
+--------------------------------
+CONFIGURATION: N = 19, threads = 16
+The oracle returns a balanced function
+Answer =  {'0000001110100110001': 100}
+Avg elapsed time [ms] =  117636.16030216217  Std deviation =  3466.748208955289
+Job execute: Avg elapsed time [ms] =  110.72311401367188  Std deviation =  128.36924861967145
+--------------------------------
+CONFIGURATION: N = 19, threads = 32
+The oracle returns a balanced function
+Answer =  {'1001101100110000111': 100}
+Avg elapsed time [ms] =  91605.51459789276  Std deviation =  3893.5885332492157
+Job execute: Avg elapsed time [ms] =  107.21738338470459  Std deviation =  111.11099859325947
+--------------------------------
+CONFIGURATION: N = 22, threads = 1

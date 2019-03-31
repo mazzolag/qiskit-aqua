@@ -40,7 +40,7 @@ from qiskit.tools.visualization import plot_histogram
 # and with the same probability it is balanced
 
 #oracleType, oracleValue = np.random.randint(2), np.random.randint(2)
-oracleType, oracleValue = 0, 1
+oracleType, oracleValue = 1, 1
 
 if oracleType == 0:
     print("The oracle returns a constant value ", oracleValue)

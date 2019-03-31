@@ -3,11 +3,11 @@
 # this part will be ignored if:
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=2
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=30
+#SBATCH --time=300
 
 # loading necessary modules
 echo "============================="
