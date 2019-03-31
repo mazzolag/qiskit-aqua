@@ -5,7 +5,7 @@ threads = [1, 2, 4, 8, 16, 32]  # number of threads
 numQubits = [4, 7, 10, 13, 16, 19]  # input number n
 
 # readout data from textfile
-filenames = ["../docs/dj-bench.txt"]
+filenames = ["../docs/dj-benchmark.txt"]
 master_data = []
 data = [master_data]
 
@@ -17,7 +17,7 @@ for i, filename in enumerate(filenames):
     temp = data[i].split('\n')
 
     avg_times = [row.split(' ')[5] for row in temp if row.startswith("elapsed")]
-    avg_times = [k.split('^M')[0] for k in avg_times]  # get rid of the '^M' in the list of avg_times
+    #avg_times = [k.split('^M')[0] for k in avg_times]  # get rid of the '^M' in the list of avg_times
 
     avg_times = [float(num) for num in avg_times]
     lenThr = len(threads)
@@ -36,7 +36,7 @@ for i in range(len(y)):
     plt.xlabel('number of threads')
     plt.ylabel('time [ms]')
     plt.legend(loc='upper left')
-plt.suptitle('benchmark for DJ algortihm in qiskit')
+plt.suptitle('DJ algortihm benchmark (without reps)')
 plt.tight_layout()
 plt.subplots_adjust(top=0.86)
 plt.savefig('dj-benchmark')
